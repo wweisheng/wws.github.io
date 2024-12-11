@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol {
+  margin-left: 20px; /* 为有序列表添加左侧外边距 */
+  margin-right: 20px; /* 为有序列表添加右侧外边距 */
+  margin-top: 10px; /* 为有序列表添加顶部外边距 */
+  margin-bottom: 10px; /* 为有序列表添加底部外边距 */
+  padding: 0; /* 移除默认的内边距 */
+  list-style-position: inside; /* 使列表标记位于文本内部 */
+}
+
+/* 如果您想要更精细地控制，可以单独设置每个方向的外边距： *
+ol {
+  margin-top: 10px;    /* 顶部外边距 * /
+  margin-right: 20px;   /* 右侧外边距 * /
+  margin-bottom: 10px;   /* 底部外边距 * /
+}
+  font-size: 24px; /* 标题大小 */
+ 
+  
+   /* h2 与下一个元素（如 p 标签）之间的距离 */
+
+p {
+  font-size: 16px; /* 段落字体大小 */
+  line-height: 2.4; /* 行高，可以调整以增加或减少行间距 */
+  margin-top: 20px;
+  margin-bottom: 20px; /* 段落之间的距离 */
+  
+}
+ul {
+  list-style: none; /* 移除默认的列表标记 */
+    margin: 5px; /* 为 ul 元素添加外边距 */
+    padding: 10; /* 移除默认的内边距 */
+    
+    
+
+}
+
+li {
+  font-size: 16px; /* 设置字体大小 */
+  line-height: 1.8; /* 设置行高，影响行间距 */
+  margin-bottom: 10px; /* 设置列表项之间的底部外边距 */
+  
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td {
+  padding: 8px;
+  vertical-align: middle;
+  text-align: left; /* 水平居中对齐单元格内容 */
+  word-break: break-word; /* 长单词换行 */
+  overflow-wrap: break-word; /* 长URL或无法在单元格中完整显示的文本换行 */
+  
+}
+
+img {
+  width: 150px; /* 设置图片宽度为300像素 */
+  height: 200px; /* 设置图片高度为200像素 */
+  border: thin solid black; /* 设置图片边框 */
+  
+}
+
+a {
+  text-decoration: none;
+  color: #0645AD; /* A nice blue */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fullname {
+  font-size: 130%;
+  padding-bottom: 18px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: white;
+  padding: 10px 0;
+  display: space-between;
+  justify-content: center; /* 使导航项在容器中居中对齐 */
+  align-items: center;
+  border-top: 2px solid #ccc; /* 上方灰色线条 */
+    border-bottom: 2px solid #ccc; /* 下方灰色线条 */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  gap: 10px; /* 调整间距以确保所有项都能放下 */
+}
+
+.nav-item {
+  flex-grow: 1; /* 导航项根据内容增长 */
+  text-align: center; /* 文本居中对齐 */
+  line-height: 0.3; 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px; /* 调整字体大小以适应一行显示 */
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+
+.content {
+  
+  padding: 15px;
+  max-width: 1000px; /* 根据需要调整最大宽度 */
+}
+main {
+  display: flex;
+  flex-direction: column; /* 设置主轴为垂直方向 */
+  align-items: center; /* 垂直居中对齐子元素 */
+  padding: 15px; /* 主容器的内边距 */
+}
+
+.content, .useful-links {
+  width: 100%; /* 设置宽度 */
+  max-width: 1000px; /* 最大宽度 */
+  margin-bottom: 20px; /* 底部外边距，为上下部分之间提供间距 */
+  padding: 0px; /* 内边距 */
+}
+
+
+
+
+
+
+.useful-links {
+  border-top: 2px solid #ccc; /* 在模块上方添加灰色线条 */
+  padding-top: 10px; /* 在线条和内容之间添加一些间距 */
+  margin-top: 0px; /* 在模块上方添加一些外边距 */
+  
+  
+}
+.useful-links li {
+  line-height: 1; /* 设置行高为1.6，可以根据需要调整 */
+  margin-bottom: 5px; /* 列表项之间的底部外边距 */
+}
+.useful-links p {
+  color: #666;
+  
+}
+h2 {
+  font-size: 24px; /* 标题大小 */
+  color: #333; /* 标题颜色 */
+  margin-top: 20px;
+  margin-bottom: 10px; /* 标题与下一模块之间的底部外边距 */
+}
